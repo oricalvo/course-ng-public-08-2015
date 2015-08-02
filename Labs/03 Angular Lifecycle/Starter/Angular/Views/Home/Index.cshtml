@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html ng-app>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+        
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-controller="HomeCtrl as ctrl" class="group-index-view">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Contact Book</a>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="items list-group">
+            <li ng-repeat="item in ctrl.items" class="list-group-item" ng-click="ctrl.itemClicked(item)">
+                <span class="group" ng-if="item.isGroup"><span class="glyphicon glyphicon-book"></span> {{item.name}}</span>
+                <span class="contact" ng-if="item.isContact"><span class="glyphicon glyphicon-user"></span> {{item.name}}</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="~/Scripts/Lib/jquery.js"></script>
+    <script src="~/Scripts/Lib/angular.js"></script>
+
+    <script src="~/Scripts/BL/BookItem.js"></script>
+    <script src="~/Scripts/BL/Contact.js"></script>
+    <script src="~/Scripts/BL/Group.js"></script>
+    <script src="~/Scripts/BL/Book.js"></script>
+
+    <script src="~/Scripts/Controllers/HomeCtrl.js"></script>
+</body>
+</html>

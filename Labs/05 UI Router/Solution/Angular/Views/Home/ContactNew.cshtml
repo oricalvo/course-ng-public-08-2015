@@ -1,0 +1,20 @@
+﻿<div class="contact-new-view">
+
+    <form name="ctrl.form" novalidate>
+        <div class="field">
+            <div>Name</div>
+            <input type="text" ng-model="ctrl.name" name="name" required />
+            <span class="validation-message" ng-show="ctrl.form.name.$invalid && (ctrl.form.name.$touched || ctrl.form.$submitted)">Please specify a name</span>
+        </div>
+
+        <div class="field">
+            <div>E-Mail</div>
+            <input type="email" ng-model="ctrl.email" name="email" />
+            <span class="validation-message" ng-show="ctrl.form.email.$invalid && (ctrl.form.email.$touched || ctrl.form.$submitted)">Please specify a valid email</span>
+        </div>
+
+        <div class="buttons">
+            <input type="submit" class="btn btn-primary" ng-click="ctrl.save()">
+        </div>
+    </form>
+</div>

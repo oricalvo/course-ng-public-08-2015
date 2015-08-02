@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="MyApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+        
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <base href="/" />
+</head>
+<body>
+    @Html.Action("Navbar", "Home")
+
+    <div ui-view></div>
+
+    @*<div ng-controller="HomeCtrl as ctrl">
+
+        <div>
+            <div ng-show="ctrl.view == 'groupIndex'">
+                @Html.Action("GroupIndex", "Home")
+            </div>
+
+            <div ng-show="ctrl.view == 'contactNew'">
+                @Html.Action("ContactNew", "Home")
+            </div>
+        </div>
+    </div>*@
+
+    <script src="~/Scripts/Lib/jquery.js"></script>
+    <script src="~/Scripts/Lib/angular.js"></script>
+    <script src="~/Scripts/Lib/angular-ui-router.js"></script>
+
+    <script src="~/Scripts/Services/App.js"></script>
+
+    <script src="~/Scripts/BL/BookItem.js"></script>
+    <script src="~/Scripts/BL/Contact.js"></script>
+    <script src="~/Scripts/BL/Group.js"></script>
+    <script src="~/Scripts/BL/Book.js"></script>
+
+    <script src="~/Scripts/Controllers/GroupIndexCtrl.js"></script>
+    <script src="~/Scripts/Controllers/ContactNewCtrl.js"></script>
+</body>
+</html>
