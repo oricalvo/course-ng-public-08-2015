@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        function change(obj) {
+            obj.str = "XXX";
+        }
+
+        var obj = { str: "ABC" };
+
+        change(obj);
+
+        console.log(obj.str);
+
+        var str = "";
+
+        for (var i = 0; i < 10000; i++) {
+            str += i;
+        }
+    </script>
+</body>
+</html>

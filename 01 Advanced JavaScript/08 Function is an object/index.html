@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+
+        function createFunc() {
+            return function () {
+            }
+        }
+
+        console.log(createFunc.toString());
+
+        var f = new Function();
+        console.log(f());
+
+        //console.log(g.length);
+        //console.log(g.name);
+        //console.log(g.prototype);
+
+        //var f1 = createFunc();
+        //var f2 = createFunc();
+
+        //console.log(f1 == f2);
+
+    </script>
+</body>
+</html>

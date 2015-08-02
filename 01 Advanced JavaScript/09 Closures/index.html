@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+
+        function outer() {
+            var num = 10;
+
+            var inner1 = function () {
+                console.log("inner: " + num++);
+            }
+
+            var inner2 = function () {
+                console.log("inner: " + num++);
+            }
+
+            return [inner1, inner2];
+        }
+
+        var funcs = outer();
+        var inner1 = funcs[0];
+        var inner2 = funcs[1];
+
+        inner2();
+
+        inner1();
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+
+        var counter = {
+            value: 0,
+            inc: function () {
+                this.value++;
+
+                //this.value = this.value + 1;
+            },
+            dec: function () {
+                this.value--;
+            }
+        };
+
+        counter.inc();
+        counter.dec();
+
+        var func = counter.inc;
+
+        func();
+
+        console.log(window.value);
+    </script>
+</body>
+</html>

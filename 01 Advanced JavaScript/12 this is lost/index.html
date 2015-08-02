@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        function dec() {
+            console.log(this);
+        }
+
+        var counter = {
+            inc: function () {
+                console.log(this);
+
+                //dec.call(counter);
+                dec.apply(counter, []);
+            },
+        };
+
+        counter.inc();
+    </script>
+</body>
+</html>
