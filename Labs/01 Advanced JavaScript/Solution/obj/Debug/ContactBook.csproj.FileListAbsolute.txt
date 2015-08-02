@@ -10,3 +10,9 @@ C:\3357\Git\Labs\01 OOP\Solution\bin\WebApplication2.pdb
 C:\3357\Git\Labs\01 OOP\Solution\obj\Debug\ContactBook.csprojResolveAssemblyReference.cache
 C:\3357\Git\Labs\01 OOP\Solution\obj\Debug\WebApplication2.dll
 C:\3357\Git\Labs\01 OOP\Solution\obj\Debug\WebApplication2.pdb
+C:\3357\Git\Labs\01 Advanced JavaScript\Solution\bin\WebApplication2.dll.config
+C:\3357\Git\Labs\01 Advanced JavaScript\Solution\bin\WebApplication2.dll
+C:\3357\Git\Labs\01 Advanced JavaScript\Solution\bin\WebApplication2.pdb
+C:\3357\Git\Labs\01 Advanced JavaScript\Solution\obj\Debug\ContactBook.csprojResolveAssemblyReference.cache
+C:\3357\Git\Labs\01 Advanced JavaScript\Solution\obj\Debug\WebApplication2.dll
+C:\3357\Git\Labs\01 Advanced JavaScript\Solution\obj\Debug\WebApplication2.pdb
