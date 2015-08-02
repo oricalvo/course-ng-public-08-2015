@@ -1,0 +1,6 @@
+C:\3357\Seed\bin\WebApplication2.dll.config
+C:\3357\Seed\bin\WebApplication2.dll
+C:\3357\Seed\bin\WebApplication2.pdb
+C:\3357\Seed\obj\Debug\Angular.csprojResolveAssemblyReference.cache
+C:\3357\Seed\obj\Debug\WebApplication2.dll
+C:\3357\Seed\obj\Debug\WebApplication2.pdb
