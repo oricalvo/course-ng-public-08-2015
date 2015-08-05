@@ -9,8 +9,7 @@
     <link href="Styles/Site.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="group-index-view">
-
+    <div class="group-index-view" ng-controller="GroupIndexCtrl">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -26,27 +25,24 @@
         </nav>
 
         <ul class="items list-group">
-            <li class="list-group-item">
+            <li class="list-group-item" ng-show="group.parent!=null" ng-click="gotoParent()">
                 <span class="back-to-parent"><span class="glyphicon glyphicon-arrow-up"></span> [..]</span>
             </li>
 
-            <li class="list-group-item">
-                <span class="group"><span class="glyphicon glyphicon-book"></span> Group1XXX</span>
-            </li>
-
-            <li class="list-group-item">
-                <span class="group"><span class="glyphicon glyphicon-book"></span> Group2</span>
-            </li>
-
-            <li class="list-group-item">
-                <span class="contact"><span class="glyphicon glyphicon-user"></span> Contact1</span>
+            <li class="list-group-item" ng-repeat="item in group.items" ng-click="changeCurrentGroup(item)">
+                <span class="group"><span class="glyphicon glyphicon-book"></span> {{item.name}}</span>
             </li>
         </ul>
     </div>
+
+    <script src="angular.js"></script>
 
     <script src="BookItem.js"></script>
     <script src="Contact.js"></script>
     <script src="Group.js"></script>
     <script src="Book.js"></script>
+
+    <script src="App.js"></script>
+    <script src="GroupIndexCtrl.js"></script>
 </body>
 </html>
