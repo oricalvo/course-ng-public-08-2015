@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
+<head>
+    <title></title>
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        {{message}}
+
+        <div>
+            <input ng-model="searchStr" />
+            <button ng-click="search()">Search</button>
+        </div>
+
+        <ul>
+            <li ng-repeat="contact in contacts">
+                <span>{{contact.name}}</span>
+                <button ng-click="remove($index)">Delete</button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="angular.js"></script>
+    <script src="App.js"></script>
+    <script src="HomeCtrl.js"></script>
+
+    <script>
+        setTimeout(function () {
+            $("div[ng-controller]").append("<span>{{message}}</span>");
+        }, 2000);
+    </script>
+</body>
+</html>
