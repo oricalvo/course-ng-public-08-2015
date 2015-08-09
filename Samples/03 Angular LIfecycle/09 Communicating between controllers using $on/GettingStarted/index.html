@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
+<head>
+    <title></title>
+</head>
+<body>
+    <div ng-controller="SideBarCtrl">
+        <ul ng-repeat="page in pages">
+            <li ng-click="changePage(page)">
+                {{page}}
+            </li>
+        </ul>
+    </div>
+
+    <div ng-controller="ContentCtrl">
+        <h1>{{page}}</h1>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="angular.js"></script>
+    <script src="App.js"></script>
+    <script src="ContentCtrl.js"></script>
+    <script src="SideBarCtrl.js"></script>
+</body>
+</html>

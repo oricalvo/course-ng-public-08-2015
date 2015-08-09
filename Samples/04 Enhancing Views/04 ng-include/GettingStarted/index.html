@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
+<head>
+    <title></title>
+
+    <style>
+        [ng-cloak] {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        <label>
+            <span>Show Admin</span>
+            <input type="checkbox" ng-model="showAdmin" />
+        </label>
+
+        <!--<div ng-show="showAdmin">
+            <h1>Admin</h1>
+        </div>-->
+
+        <div ng-include="showAdmin && 'admin.html'"></div>
+    </div>
+
+    <script src="angular.js"></script>
+    <script src="App.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>

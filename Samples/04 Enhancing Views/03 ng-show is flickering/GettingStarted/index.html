@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
+<head>
+    <title></title>
+
+    <style>
+        [ng-cloak] {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        <div ng-show="role=='admin'" ng-cloak>
+            <h1>Administration</h1>
+
+            <ul>
+                <li>Delete</li>
+                <li>Rename</li>
+            </ul>
+
+            <button>Save</button>
+        </div>
+    </div>
+
+    <script src="angular.js"></script>
+    <script src="App.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>
