@@ -1,6 +1,0 @@
-C:\3357\Git\Samples\02 Introducing Angular\GettingStarted\GettingStarted\bin\GettingStarted.dll.config
-C:\3357\Git\Samples\02 Introducing Angular\GettingStarted\GettingStarted\bin\GettingStarted.dll
-C:\3357\Git\Samples\02 Introducing Angular\GettingStarted\GettingStarted\bin\GettingStarted.pdb
-C:\3357\Git\Samples\02 Introducing Angular\GettingStarted\GettingStarted\obj\Debug\GettingStarted.csprojResolveAssemblyReference.cache
-C:\3357\Git\Samples\02 Introducing Angular\GettingStarted\GettingStarted\obj\Debug\GettingStarted.dll
-C:\3357\Git\Samples\02 Introducing Angular\GettingStarted\GettingStarted\obj\Debug\GettingStarted.pdb

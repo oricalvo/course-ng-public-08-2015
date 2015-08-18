@@ -1,0 +1,16 @@
+﻿
+<div class="clock">
+    <ul>
+        <li ng-repeat="zone in ctrl.zones">
+            <span class="title city" ng-bind="zone.name"></span>
+            <span class="content">
+                <span class="time" ng-bind="zone.time | date:'shortTime'"></span>
+            </span>
+            <span class="footer"></span>
+        </li>
+    </ul>
+
+    <div>
+        <button ng-click="ctrl.refresh()">Refresh</button>
+    </div>
+</div>

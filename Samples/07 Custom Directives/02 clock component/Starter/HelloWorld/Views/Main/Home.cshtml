@@ -1,0 +1,15 @@
+﻿<div class="home-view" ng-controller="HomeCtrl">
+    <h1>Home</h1>
+
+    Date:
+    <datepicker></datepicker>
+
+    <ul class="clock">
+        <li ng-repeat="zone in zones">
+            <span class="title city" ng-bind="zone.name"></span>
+            <span class="content">
+                <span class="time" ng-bind="zone.time | date:'shortTime'"></span>
+            </span>
+        </li>
+    </ul>
+</div>

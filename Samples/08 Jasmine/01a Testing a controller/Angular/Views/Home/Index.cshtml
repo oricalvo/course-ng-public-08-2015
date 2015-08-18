@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="myApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+
+</head>
+<body>
+    <div class="home-view" ng-controller="HomeCtrl as ctrl"> 
+        <ul>
+            <li ng-repeat="contact in ctrl.contacts">
+                <span>{{contact.name}}</span>
+            </li>
+        </ul>
+
+        <div>Name:</div>
+        <input type="text" ng-model="ctrl.name" />
+
+        <div>
+            <br />
+            <button ng-click="ctrl.save()">Save</button>
+        </div>
+    </div>
+
+    <script src="~/Scripts/angular.js"></script>
+
+    <script src="~/Scripts/Contact.js"></script>
+
+    <script src="~/Scripts/MyApp.js"></script>
+    <script src="~/Scripts/ContactService.js"></script>
+
+    <script src="~/Scripts/HomeCtrl.js"></script>
+</body>
+</html>

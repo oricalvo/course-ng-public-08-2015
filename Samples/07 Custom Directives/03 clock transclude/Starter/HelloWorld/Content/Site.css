@@ -1,0 +1,48 @@
+﻿body {
+}
+
+.clock {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+    .clock li {
+        display: inline-block;
+        width: 6em;
+        height: 6em;
+        background-color: lightblue;
+        text-align: center;
+        border-radius: 3px;
+        margin-right: 1em;
+        box-shadow: 5px 5px 5px #888888;
+    }
+
+.clock li .title {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-weight: bold;
+    color: lightgreen;
+    display: block;
+    background-color: blue;
+    color: white;
+    height: 1em;
+}
+
+.clock li .content {
+    display: block;
+    height: 5em;
+}
+
+    .clock li .content:before {
+        content: "";
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+.clock li .content .time {
+    vertical-align: middle;
+}
